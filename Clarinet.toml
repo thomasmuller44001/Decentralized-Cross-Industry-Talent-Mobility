@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Cross-Industry-Talent-Mobility'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.career-pathway]
+path = 'contracts/career-pathway.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.individual-verification]
+path = 'contracts/individual-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
